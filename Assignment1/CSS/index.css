@@ -1,0 +1,75 @@
+h1 {
+  color: white;
+  font-family: cursive;
+  font-size: 5rem;
+  width: fit-content;
+  margin-left: 30px;
+  margin-top: 30px;
+
+}
+.sidebar {
+  background-color: green;
+  border-radius: 10px;
+  padding: 0px 0px 10px 10px;
+  border-top: 3px solid rgb(63, 59, 59);
+  border-left: 3px solid rgb(63, 59, 59);
+  margin-bottom: 20px;
+  box-shadow: 10px 10px 5px rgb(217, 222, 223);
+}
+p,
+h2,
+h3,
+h4,
+ul {
+  color: green;
+  font-family: cursive;
+  margin-top: -10px;
+  font-size: 1.5rem;
+  width: fit-content;
+
+}
+hr {
+  color: green;
+  margin-bottom: 12px;
+}
+img {
+  width: 250px;
+  right: 20px;
+  top: 20px;
+  border-radius: 100%;
+  border-width: 4px;
+  border-color: red;
+  position: absolute;
+}
+.About {
+  padding: 20px 15px 3px 10px;
+  border-radius: 10px;
+  border-top: 3px solid green;
+  border-left: 3px solid green;
+  margin-bottom: 20px;
+  box-shadow: 10px 10px 5px rgb(217, 222, 223);
+  background-color: rgb(241, 243, 215);
+}
+.Experience {
+  padding: 20px 15px 3px 10px;
+  border-radius: 10px;
+  border-top: 3px solid green;
+  border-left: 3px solid green;
+  margin-bottom: 20px;
+  background-color: rgb(241, 243, 215);
+  box-shadow: 10px 10px 5px rgb(217, 222, 223);
+}
+h2 {
+  background-color: green;
+  padding: 12px;
+  margin-top: -23px;
+  margin-left: -10px;
+  color: white;
+  width: 100.1%;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+Table{
+  width: auto;
+  border-width: 30px;
+}
