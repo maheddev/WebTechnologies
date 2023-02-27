@@ -1,0 +1,54 @@
+.mainContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  background-image:linear-gradient(to right, #C31432, #240B36);
+  font-family: cursive;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px rgb(217, 222, 223);
+}
+.avatar {
+  width: 10rem;
+  border-radius: 100%;
+}
+.mainText {
+  color: white;
+  font-size: 2.6rem;
+  margin-right: 20px;
+}
+.tagline {
+  margin-top: -20px;
+  color: white;
+}
+.infoContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  font-family: cursive;
+}
+.about {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  flex-direction: column;
+
+}
+h2 {
+  background-image: linear-gradient(to top right, #C31432, #240B36);
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+td{
+    margin-top: -20px;
+}
