@@ -1,86 +1,73 @@
-h1 {
-  color: white;
-  font-family: cursive;
-  font-size: 5rem;
-  width: fit-content;
-  margin-left: 30px;
-  margin-top: 30px;
-
-}
-.sidebar {
-  background-color: green;
-  border-radius: 10px;
-  padding: 0px 0px 10px 10px;
-  border-top: 3px solid rgb(63, 59, 59);
-  border-left: 3px solid rgb(63, 59, 59);
-  margin-bottom: 20px;
-  box-shadow: 10px 10px 5px rgb(217, 222, 223);
-  display: flex;                  /* establish flex container */
-  flex-direction: row;            /* default value; can be omitted */
-  flex-wrap: nowrap;              /* default value; can be omitted */
-  justify-content: space-between; 
+.mainContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: nowrap;
   align-items: center;
-}
-p,
-h2,
-h3,
-h4,
-ul {
-  color: green;
+  justify-content: space-between;
+  background-image:linear-gradient(to right, #C31432, #240B36);
   font-family: cursive;
-  margin-top: -10px;
-  font-size: 1.5rem;
-  width: fit-content;
-
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px rgb(217, 222, 223);
 }
-hr {
-  color: green;
-  margin-bottom: 12px;
-}
-img {
+.avatar {
   width: 20%;
   border-radius: 100%;
-  border-width: 4px;
-  border-color: red;
-  margin: 20px 20px 20px 10px
 }
-.About {
-  padding: 20px 15px 3px 10px;
-  border-radius: 10px;
-  border-top: 3px solid green;
-  border-left: 3px solid green;
-  margin-bottom: 20px;
-  box-shadow: 10px 10px 5px rgb(217, 222, 223);
-  background-color: rgb(241, 243, 215);
+.mainText {
+  color: white;
+  font-size: 5rem;
+  margin-right: 20px;
+  margin-left: 10px;
+  margin-top: -1px;
 }
-.Experience {
-  padding: 20px 15px 3px 10px;
-  border-radius: 10px;
-  border-top: 3px solid green;
-  border-left: 3px solid green;
-  margin-bottom: 20px;
-  background-color: rgb(241, 243, 215);
-  box-shadow: 10px 10px 5px rgb(217, 222, 223);
+.tagline {
+  margin-top: -20px;
+  color: white;
+  margin-left: 10px;
+  font-size: 3rem;
+
+}
+.infoContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  font-family: cursive;
+}
+.about {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  flex-direction: column;
+
 }
 h2 {
-  background-color: green;
-  padding: 12px;
-  margin-top: -23px;
-  margin-left: -10px;
+  background-image: linear-gradient(to top right, #C31432, #240B36);
+  width: 100%;
+  text-align: center;
   color: white;
-  width: 100.1%;
-  border-top-right-radius: 6px;
-  border-top-left-radius: 6px;
+  font-size: 200%;
 }
-Table{
-  width: auto;
-  border-width: 30px;
+td{
+    margin-top: -20px;
 }
-.flexbox{
+.contact{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-wrap: nowrap;
   align-items: center;
-  align-content: center;
+  justify-content: center;
+}
+p{
+  font-size: 1.5em;
+}
+ul, ui{
+  font-size: 1.35em;
 }
