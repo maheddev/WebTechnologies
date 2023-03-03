@@ -9,6 +9,8 @@
       {
         "link-name": "off"
       }
-    ]
+    ],
+    "highest-available-document-mode": "off",
+    "button-type": "off"
   }
 }
