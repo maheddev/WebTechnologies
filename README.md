@@ -1,4 +1,4 @@
-# webTechnologies Course Learning Path
+# Web Technologies Course Learning Path
 
 * Lab 1: Intro to HTML
 * Lab 2: CSS (March 3, 2023)
