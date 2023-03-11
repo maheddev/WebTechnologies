@@ -1,0 +1,151 @@
+* {
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+}
+.navigation li {
+  display: inline;
+}
+.navbar {
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+.navigation ul li > a,
+.login > a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+}
+.navigation ul li > a:hover,
+.login > a:hover {
+  background-color: white;
+  color: blue;
+  border-radius: 10px;
+  border: red solid 1px;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.219),
+    0 6px 20px 0 rgba(255, 255, 255, 0.192);
+}
+.title > h2 {
+  color: white;
+}
+.main-container {
+  margin: 0px;
+  width: 100%;
+  /* background-image: url("../../LAB-2023-03-09/assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; */
+  height: 80vh;
+}
+.banner-container {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-evenly;
+  height: 70vh;
+  padding: 30px;
+  margin-top: 30px;
+}
+.banner-text {
+  background-color: rgba(255, 255, 255, 0.534);
+  color: white;
+  padding: 50px;
+  width: 25%;
+  border-radius: 20px;
+  text-align: center;
+}
+.banner-text:hover {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5),
+    0 6px 20px 0 rgba(255, 255, 255, 0.5);
+}
+.banner-text > h1,
+p,
+h3 {
+  margin-bottom: 20px;
+  color: black !important;
+}
+.banner-button {
+  padding: 2px 20px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+}
+
+.banner-button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  cursor: pointer;
+  font-weight: 900;
+}
+body {
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  background-image: url("../../LAB-2023-03-09/assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.banner-image {
+  width: 50%;
+  border-radius: 20px;
+  opacity: 0.4;
+}
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.content-image {
+  width: 100%;
+  height: 35vh;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 253, 253, 0.425);
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 20px;
+  padding-bottom: 20px;
+}
+.content:hover {
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+.content-title {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 4rem;
+  font-family: "Brush Script MT", cursive;
+  color: white;
+}
+.down-icon {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-bottom: 60px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.down-icon a{
+  padding: 10px;
+  color: white;
+}
+.down-icon a:hover{
+  background-color: white;
+  padding: 10px 15px;
+  border-radius:100%;
+  color:black
+}
