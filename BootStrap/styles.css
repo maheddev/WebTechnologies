@@ -1,5 +1,12 @@
-.input-container{
-    margin: auto;
-    width: 50%;
-    margin-top: 20px;
+.main{
+    margin: 200px 0;
+}
+.button{
+    background: red;
+}
+.slideshow{
+    margin: 20px;
+}
+.slideshow-caption{
+    background-image: -linear-gradient(to top, red, blue);
 }
