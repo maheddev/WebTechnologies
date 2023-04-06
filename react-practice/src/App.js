@@ -1,14 +1,15 @@
 /* eslint-disable eqeqeq */
 import React from "react";
 import "./App.css";
+
 function App() {
   const [name, setName] = React.useState("");
   const [regNum, setRegNum] = React.useState("");
   const [contact, setContact] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [gender, setGender] = React.useState("");
-
   const [data, setData] = React.useState([]);
+
   const handleSubmit = () => {
     if (
       name != "" &&
@@ -27,11 +28,11 @@ function App() {
           emailAddress: email,
         },
       ]);
-    }
-    else{
+    } else {
       alert("Please Enter data in all the fields");
     }
   };
+
   return (
     <div className="App">
       <div className="inputs">
@@ -86,4 +87,5 @@ function App() {
     </div>
   );
 }
+
 export default App;

@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+  color: #fff;
+}
+.background-image {
+  background-image: url("../assets/header-image.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.5);
+}
+.header-container {
+  width: 64%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.header-container > h1 {
+  font-size: 4.5rem;
+  letter-spacing: 25px;
+  margin-bottom: 4%;
+}
+
+.header-container > h2 {
+  font-size: 1em;
+  margin-bottom: 4%;
+  font-weight: 400;
+}
+.tagline {
+  text-transform: capitalize;
+  font-size: 1em;
+  margin-bottom: 4%;
+}
+.button-container {
+  margin-bottom: 5%;
+}
+.window-button {
+  padding: 1%;
+  background-color: #2196f3;
+  border-radius: 5px;
+  border: #2196f3 2px solid;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  margin-right: 2%;
+}
+.others-button {
+  padding: 1%;
+  background-color: transparent;
+  border-radius: 5px;
+  color: #fff;
+  border: white 2px solid;
+  font-size: 1em;
+  font-weight: 700;
+}
+.second-line {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  background-color: #2196f3;
+  padding: 0.5% 18%;
+}
+.second-line > a {
+  padding-left: 0.5%;
+  text-decoration: underline;
+}
+.third-line {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: left;
+  background-color: #000;
+  padding: 0.65% 18%;
+}
+.third-line > button {
+  padding: 0.45% 1%;
+  background-color: #2196f3;
+  border-radius: 5px;
+  border: #2196f3 2px solid;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 400;
+}
+.create-with-unity {
+  padding: 0 18%;
+}
+.create-with-unity > h1 {
+  color: #000;
+  font-size: 2.5em;
+  margin-top: 3%;
+}
+.create-with-unity > p {
+  color: #000;
+  font-size: 1.1em;
+  margin-bottom: 3%;
+  line-height: 180%;
+}
+.steps {
+  display: flex;
+  padding: 2% 18%;
+  justify-content: space-between;
+}
+.step {
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3%;
+  box-shadow: 0px 9px 46px -5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.step > h2 {
+  color: #000;
+  margin-bottom: 4%;
+}
+.step > a {
+  color: #2196f3;
+  text-decoration: none;
+  font-weight: 700;
+}
+.step > p {
+  margin-bottom: 8%;
+  color: #000;
+}
+.sys-requirements {
+  display: flex;
+  flex-direction: row;
+  padding: 3% 18%;
+  justify-content: space-between;
+}
+.sys-requirements > img {
+  width: 48%;
+  border-radius: 10px;
+}
+.sys-requirements > div {
+  width: 48%;
+  padding-left: 10%;
+}
+.sys-requirements > div > p {
+  color: #000;
+  margin-bottom: 4%;
+  font-size: 1.1rem;
+  word-spacing: 4px;
+}
+
+.sys-requirements > div > h2 {
+  font-size: 2rem;
+  color: #000;
+  margin-bottom: 5%;
+}
+
+.sys-requirements > div > h3 {
+  color: #000;
+  margin-bottom: 3%;
+}
+
+.unity-hub {
+  display: flex;
+  flex-direction: row;
+  padding: 3% 18%;
+  justify-content: space-between;
+}
+.unity-hub > img {
+  width: 48%;
+  border-radius: 10px;
+}
+.unity-hub > div {
+  width: 48%;
+  padding-right: 10%;
+}
+.unity-hub > div > p {
+  color: #000;
+  margin-bottom: 4%;
+  font-size: 1.1rem;
+  word-spacing: 4px;
+}
+
+.unity-hub > div > h2 {
+  font-size: 2rem;
+  color: #000;
+  margin-bottom: 5%;
+}
+
+.unity-hub > div > h3 {
+  color: #000;
+  margin-bottom: 3%;
+}
+.simplify {
+  display: flex;
+  padding: 1% 18%;
+  justify-content: space-between;
+}
+.simplify-divs {
+  width: 31%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0px 9px 46px -5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  height: fit-content;
+}
+.simplify-divs > div{
+  padding: 5%;
+}
+.simplify-divs > div > h2 {
+  color: #000;
+  margin-bottom: 4%;
+}
+.simplify-divs > div > a {
+  color: #2196f3;
+  text-decoration: none;
+  font-weight: 700;
+}
+.simplify-divs > div > p {
+  margin-bottom: 8%;
+  color: #000;
+}
+.simplify-divs > img{
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
