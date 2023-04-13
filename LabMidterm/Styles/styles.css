@@ -1,0 +1,189 @@
+.header {
+  background-image: url("../Assets/head-bg.png");
+  height: 22vh;
+}
+.inner-header {
+  display: flex;
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica";
+}
+.inner-header > h2 {
+  margin-top: 2%;
+  margin-bottom: 0;
+  padding: 0.5% 0.5%;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.inner-header > h2:hover {
+  border-radius: 5px;
+  background-color: #28a434;
+  height: fit-content;
+  color: white;
+}
+.inner-header > img {
+  height: fit-content;
+  margin: 0 2%;
+}
+.slideShow-button {
+  background-color: #28a434;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 1% 3%;
+}
+.content-container {
+  background-image: url("../Assets/chef-zarnaq-bg.png");
+  padding: 2% 10%;
+  z-index: 2;
+}
+.content-container > .second-container,
+.content-container-2 > .second-container {
+  display: flex;
+  padding: 2% 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.second-container > .content-div-1 {
+  width: 100%;
+}
+
+.second-container > .content-div-2 {
+  width: 100%;
+}
+.second-container > .content-div-3 {
+  width: 100%;
+}
+.content-div-2 > button {
+  background-color: #28a434;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 1% 3%;
+}
+.content-container-2 {
+  background-image: url("../Assets/recipe.png");
+  padding: 2% 10%;
+  z-index: 4;
+  margin-top: -30px;
+}
+.content-container-2 img {
+  height: 55vh;
+}
+hr {
+  height: 1px;
+  background-color: white;
+  border: none;
+}
+.content-container-2 button {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  border: none;
+  padding: 2% 3%;
+}
+.section-3 {
+  background-image: url("../Assets/sec-3-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -50px;
+  padding-bottom: 10%;
+}
+.section-3 .inner-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.section-3 img {
+  width: 100%;
+  border: brown solid 2px;
+  border-radius: 10px;
+}
+.section-3 h1 {
+  font-size: 2.5rem;
+  margin-top: 5%;
+}
+.inner-section > .content-div-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 12px;
+}
+.section-4 {
+  background-image: url("../Assets/best-seller-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -50px;
+  padding-bottom: 10%;
+}
+.section-4 .inner-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.inner-section img {
+  width: 100%;
+
+  border-radius: 10px;
+}
+.section-4 h1 {
+  font-size: 2.5rem;
+  margin: 5% 0;
+}
+.inner-section > .content-div-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 12px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 5%;
+    background-color: #c07e45;
+    color: white;
+    font-size: 0.75em;
+}
+.social{
+    display: flex;
+}
+.div-2 > .div-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+
+}
+.div-1 > a, .div-1 > p{
+    color: beige;
+    text-decoration: none;
+    margin-right: 3px;
+    text-align: center;
+}
+.div-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
