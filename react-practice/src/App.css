@@ -2,83 +2,55 @@
   text-align: center;
   display: flex;
   height: 100vh;
-  /* justify-content: center; */
-  flex-direction: column;
-  /* align-items: center; */
-}
-.counter-button{
-  background-image: linear-gradient(to top right, #11f1f1, #000000);
-  color: white;
-  border: 0px;
-  border-radius: 20px;
-  padding: 0 20px;
-}
-.counter-button:hover{
-  background-image: linear-gradient(to top right, #000000, #000);
-  color: white;
-  border: 0px;
-  border-radius: 20px;
-  padding: 0 20px;
-} 
-.name-list{
-  display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  background-color: rgb(7, 78, 10);
-  margin: 0.5%;
-  padding: 0.5%;
-  border-radius: 10px;
-  color: #fff;
-  border: 1px solid rgb(7, 78, 10); 
-  width: 12.5%;
-  height: fit-content;
-}
-.name-list > p{
-  margin: 1px;
-}
-.name-list:hover{
-  background-color: #fff;
-  color: rgb(7, 78, 10);
-  border: 1px solid rgb(7, 78, 10); 
-}
-.inputs{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(7, 78, 10);
-  padding: 0 2%;  
-  height: fit-content;
-}
-.input-group{
-  margin: 0.5%;
-  padding: 0.75%;
-  border: 0px;
-  border-bottom: #000 1px solid;
-  outline: 0px;
-  border-radius: 10px;
-  width: 88%;
-}
-.submit-button{
-  margin: 0.5%;
-  padding: 0.75%  2%;
-  border: 0px;
-  background-color: black;
-  color: white;
-  border-radius: 10px;
-  border: 1px solid white;
-}
-.submit-button:hover{
-  background-color: white;
-  color: #000;
-  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
-  border: 1px solid black;
-}
-.name-container{
-  display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+}
+.Card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 20%;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
   align-items: center;
+  border: 1px solid #ccc;
+}
+.Card > img {
+  min-height: 200px;
+  max-height: 200px;
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.price {
+  color: green;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.buy {
+  background-color: green;
+  border: 1px transparent solid;
+  padding: 10px 25px;
+  margin-top: 15px;
+  color: white;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  width: 100%;
+}
+.buy:hover {
+  background-color: white;
+  border: 1px solid green;
+  color: green;
+}
+h2,p {
+  margin: 5px 0;
+}
+p{
+  max-width: 250px;
+  margin-bottom: 10px;
 }

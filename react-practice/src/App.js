@@ -1,89 +1,26 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable eqeqeq */
 import React from "react";
 import "./App.css";
-
+import { data } from "./components/data";
 function App() {
-  const [name, setName] = React.useState("");
-  const [regNum, setRegNum] = React.useState("");
-  const [contact, setContact] = React.useState("");
-  const [email, setEmail] = React.useState("");
-  const [gender, setGender] = React.useState("");
-  const [data, setData] = React.useState([]);
-
-  const handleSubmit = () => {
-    if (
-      name != "" &&
-      gender != "" &&
-      regNum != "" &&
-      email != "" &&
-      contact != ""
-    ) {
-      setData([
-        ...data,
-        {
-          name: name,
-          RegistrationNumber: regNum,
-          contactNumber: contact,
-          gender: gender,
-          emailAddress: email,
-        },
-      ]);
-    } else {
-      alert("Please Enter data in all the fields");
-    }
-  };
-
+  console.log(data);
   return (
     <div className="App">
-      <div className="inputs">
-        <input
-          type="text"
-          className="input-group"
-          placeholder="Full Name"
-          onInput={(i) => setName(i.target.value)}
-        ></input>
-        <input
-          type="text"
-          className="input-group"
-          placeholder="Registration Number"
-          onInput={(i) => setRegNum(i.target.value)}
-        ></input>
-        <input
-          type="text"
-          className="input-group"
-          placeholder="Gender"
-          onInput={(i) => setGender(i.target.value)}
-        ></input>
-        <input
-          type="text"
-          className="input-group"
-          placeholder="Contact Number"
-          onInput={(i) => setContact(i.target.value)}
-        ></input>
-        <input
-          type="email"
-          className="input-group"
-          placeholder="Email Address"
-          onInput={(i) => setEmail(i.target.value)}
-        ></input>
-        <button className="submit-button" onClick={handleSubmit}>
-          Submit
-        </button>
-      </div>
-      <h1>Data</h1>
-      <div className="name-container">
-        {data.map((i) => {
-          return (
-            <div className="name-list">
-              <h3>{i.name}</h3>
-              <p>{i.emailAddress}</p>
-              <p>{i.contactNumber}</p>
-              <p>{i.RegistrationNumber}</p>
-              <p>{i.gender}</p>
-            </div>
-          );
-        })}
-      </div>
+      {data.map((d) => {
+        return (
+          <div className="Card">
+            <img src={d.images[0]} />
+            <h1>{d.title.slice(0,20)}..</h1>
+          
+            <h2 className="price">{d.price} $</h2>
+            <h2>{d.brand}</h2>
+            <p>{d.description.slice(0,50)}</p>
+            <h3>Available: {d.stock} pcs</h3>
+            <button type="button" className="buy">Add to Cart </button>
+          </div>
+        );
+      })}
     </div>
   );
 }
