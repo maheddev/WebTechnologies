@@ -11,14 +11,27 @@ function Home() {
             className="col-lg-6 d-flex justify-content-center align-items-start flex-column"
             style={{ height: "95.1vh" }}
           >
-            <h2 style={{ fontSize: "70px" }}>Your Home Decor</h2>
-            <Link className="ViewMore my-3" to="/items" style={{textDecoration: 'none'}}>View More</Link>
+            <h2 style={{ fontSize: "50px" }}>Admin Dashboard</h2>
+            <Link
+              className="ViewMore my-3"
+              to="/items"
+              style={{ textDecoration: "none" }}
+            >
+              Proceed to Products!
+            </Link>
           </div>
           <div
             className="col-lg-6 d-flex justify-content-center align-items-center flex-column"
             style={{ height: "95.1vh" }}
           >
-            <img src={sofaChair} alt="Hello" />
+            <img src={sofaChair} alt="Hello" className="responsive"/>
+            <Link
+              className="ViewMore my-3"
+              to="/underConstruction"
+              style={{ textDecoration: "none" }}
+            >
+              Go to Buyer Mode!
+            </Link>
           </div>
         </div>
       </div>

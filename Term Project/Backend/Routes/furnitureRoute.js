@@ -51,7 +51,7 @@ router.put("/update/:id", async (req, res) => {
       quantity,
     });
     await data.save().then(() => {
-      res.send(200).json({ message: "update successful" });
+      res.status(200).json({ message: "update successful" });
     });
   } catch (error) {
     console.log(error);
@@ -63,7 +63,7 @@ router.delete("/delete/:id", async (req, res) => {
   const id = req.params.id;
   try {
     await furnitureSchema.findByIdAndDelete(id).then(() => {
-      res.send(200).json({ message: "Deletion Success" });
+      res.status(200).json({ message: "Deletion Success" });
     });
   } catch (error) {
     console.log(error);

@@ -1,15 +1,33 @@
 .AddToCart {
-    padding: 3px 10px;
-    border-radius: 30px;
-    background-color: transparent;
-    color: #000;
-    font-weight: bold;
-    border: 2px solid #000;
-    font-size: 12px;
-    margin-top: 10px;
-  }
-  .AddToCart:hover{
-      background-color: #000;
-      border: 2px solid transparent;
-      color: #fff;
-  }
+  padding: 3px 10px;
+  border-radius: 30px;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 13px;
+  text-decoration: none;
+}
+.button-container {
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+  justify-content: space-evenly;
+}
+#delete{
+    border: red 2px solid;
+    color: red;
+}
+#update{
+    border: green 2px solid;
+    color: green;
+}
+
+#delete:hover{
+    border: red 2px solid;
+    color: white;
+    background-color: red;
+}
+#update:hover{
+    border: green 2px solid;
+    color: white;
+    background-color: green;
+}

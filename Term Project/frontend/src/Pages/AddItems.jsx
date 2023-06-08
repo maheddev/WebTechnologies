@@ -1,5 +1,6 @@
 import axios from "axios";
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 
 function Items() {
   const [data, setData] = React.useState({
@@ -9,6 +10,7 @@ function Items() {
     price: "",
     quantity: "",
   });
+  const navigate = useNavigate();
   const valueChanged = (val) => {
     const { name, value } = val.target;
     setData({ ...data, [name]: value });
@@ -17,13 +19,15 @@ function Items() {
   const submit = async (event) => {
     //Avoid Refreshing
     event.preventDefault();
-    await axios.post(url, data).then((response) => console.log(response));
+    await axios.post(url, data).then((response) => {navigate('/items')});
   };
   return (
     <div
-      className="bg-dark d-flex justify-content-center align-items-center"
+      className="bg-dark d-flex justify-content-center align-items-center flex-column"
       style={{ minHeight: "93vh" }}
     >
+      <h1 className="text-white">ADD PRODUCTS</h1>
+
       <div className="container p-4">
         <div className="mb-3">
           <label
