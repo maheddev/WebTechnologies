@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./Styles/Styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            fetch()
+          });
+      function fetch() {
+        $.ajax({
+          url: "http://localhost:1000/api/get",
+          type: "GET",
+          dataType: "JSON",
+          data: JSON.stringify({}),
+          success: function (data) {
+            for (var i = 0; i < data.data.length; i++) {
+              $(".dataFromServer").append(
+                `
+                <div class="data-render">
+                    <h2>${data.data[i].name}</h2>
+                    <h4>${data.data[i].expertise}</h4>
+                    <h4>${data.data[i].qualification}</h4>
+                </div>
+                `
+              );
+            }
+          },
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="dataFromServer"></div>
+    </div>
+  </body>
+</html>
