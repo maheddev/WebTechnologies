@@ -32,13 +32,20 @@ function UpdateItems() {
     const { name, value } = val.target;
     setData({ ...data, [name]: value });
   };
-  const postUrl = "http://localhost:1000/api/update/"+id;
+  const postUrl = "http://localhost:1000/api/update/" + id;
   const submit = async (event) => {
-    //Avoid Refreshing
-    event.preventDefault();
-    await axios.put(postUrl, data).then((response) => {
-        console.log(response)});
-        navigation('/items')
+    if (data.title == "" || data.description == "" || data.image == "" || data.quantity == "" || data.price == "") {
+      alert("Fill data in all the Fields")
+    }
+    else {
+      //Avoid Refreshing
+      event.preventDefault();
+      await axios.put(postUrl, data).then((response) => {
+        console.log(response)
+      });
+      navigation('/items')
+
+    }
   };
   return (
     <div

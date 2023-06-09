@@ -9,8 +9,8 @@ function NavBar() {
         data-bs-theme="dark"
       >
         <div className="container">
-          <Link className="navbar-brand" to="/">
-            Furniture Shop
+          <Link className="navbar-brand" style={{fontWeight: 'bolder'}} to="/">
+            Furnitia.com
           </Link>
           <button
             className="navbar-toggler"

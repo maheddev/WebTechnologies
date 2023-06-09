@@ -17,9 +17,15 @@ function Items() {
   };
   const url = "http://localhost:1000/api/add";
   const submit = async (event) => {
-    //Avoid Refreshing
-    event.preventDefault();
-    await axios.post(url, data).then((response) => {navigate('/items')});
+    if (data.title == "" || data.description == "" || data.image == "" || data.quantity == "" || data.price == "") {
+      alert("Fill data in all the Fields")
+    }
+    else {
+      //Avoid Refreshing
+      event.preventDefault();
+      await axios.post(url, data).then((response) => { navigate('/items') });
+
+    }
   };
   return (
     <div
@@ -44,6 +50,7 @@ function Items() {
             id="exampleFormControlInput1"
             placeholder="Name of the Product"
             value={data.title}
+            required
           />
         </div>
         <div className="mb-3">
@@ -61,6 +68,7 @@ function Items() {
             onChange={valueChanged}
             placeholder="Description of the Product"
             value={data.description}
+            required
           />
         </div>
         <div className="mb-3">
@@ -78,6 +86,7 @@ function Items() {
             onChange={valueChanged}
             value={data.image}
             placeholder="URL of the Picture of the product"
+            required
           />
         </div>
         <div className="mb-3">
@@ -95,6 +104,7 @@ function Items() {
             value={data.quantity}
             placeholder="Stock Available (Available Items)"
             onChange={valueChanged}
+            required
           />
         </div>
         <div className="mb-3">
@@ -112,6 +122,7 @@ function Items() {
             placeholder="Unit Price of the Product"
             onChange={valueChanged}
             value={data.price}
+            required
           />
         </div>
         <button className="btn btn-success my-3" onClick={submit}>

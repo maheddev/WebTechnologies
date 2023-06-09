@@ -19,23 +19,23 @@ function Products({ data }) {
           <div
             className="card d-flex justify-content-center align-items-center m-4 p-2"
             style={{
-              height: "380px",
-              width: "300px",
+              height: "480px",
+              width: "350px",
               backgroundColor: "#fff",
               textAlign: "center",
             }}
           >
             <div>
               <img
-                style={{ width: "120px", height: "120px", borderRadius: '8px' }}
-                src={sofaChair}
+                style={{ width: "220px", height: "220px", borderRadius: '8px' }}
+                src={d.image}
                 alt="Image gg"
-                className="img-fluid my-1"
+                className="img-fluid my-3"
               />
             </div>
-            <h4>{d.title}</h4>
+            <h4>{d.title.slice(0,20)}</h4>
             <p>{d.description.slice(0,50)}...</p>
-            <h5 className="text-success">{d.price} $</h5>
+            <h5 className="text-success" style={{fontWeight:"bold"}}>{d.price} $</h5>
             <h5 className="text-danger">Remaining Stock: {d.quantity}</h5>
             <div className="button-container">
               <Link className="AddToCart" to={`/update/${d._id}`} id="update">

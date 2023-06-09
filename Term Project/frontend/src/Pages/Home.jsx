@@ -24,7 +24,7 @@ function Home() {
             className="col-lg-6 d-flex justify-content-center align-items-center flex-column"
             style={{ height: "95.1vh" }}
           >
-            <img src={sofaChair} alt="Hello" className="responsive"/>
+            <img src={sofaChair} alt="Hello" className="responsive" style={{width: '300px'}}/>
             <Link
               className="ViewMore my-3"
               to="/underConstruction"
