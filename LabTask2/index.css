@@ -1,0 +1,111 @@
+.success {
+  border: 2px solid green;
+  box-shadow: 1px 1px 5px green;
+}
+.error {
+  border: 2px solid red;
+  box-shadow: 1px 1px 5px red;
+}
+.name {
+  margin: 10px 0px 10px 0px;
+  border-radius: 5px;
+  height: 40px;
+  width: 300px;
+  padding: 0px 20px 0px 20px;
+  border-color: rgba(9, 29, 212, 0.685);
+}
+@keyframes shakeIt {
+  0% {
+    right: -10px;
+  }
+  50% {
+    right: 0px;
+  }
+}
+.mainContainer {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 50px;
+  /* background-color:rgba(51, 5, 5, 0.7); */
+}
+.secondary-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  padding-top: 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 4);
+  margin-bottom: 30px;
+}
+
+.secondary-container:hover {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5),
+    0 6px 20px 0 rgba(255, 255, 255, 0.5);
+}
+
+/* Correct Way of Placing an Image to the  Background*/
+body {
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  background-image: url("./assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+/* Follow @mahedshahzad for more information */
+.mainContainer h1 {
+  color: #1f1c18;
+  opacity: 1;
+}
+.sign-up-button {
+  width: 345px;
+  height: 45px;
+  border-radius: 5px;
+  border-color: white;
+  margin-top: 20px;
+  background-image: linear-gradient(to top right, #8e0e00, #1f1c18);
+  color: white;
+  font-size: 1.25em;
+  margin: 0px;
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  box-shadow: 1px 1px 5px white;
+}
+.sign-up-button:hover {
+  background-image: linear-gradient(to top right, #fff, #fff);
+  color: black;
+}
+.mainContainer h5 {
+  color: #fff;
+}
+.mainContainer > h1 {
+  color: #fff;
+  opacity: 1;
+  font-size: 3.5em;
+  letter-spacing: 0.25cm;
+}
+.mainContainer a {
+  color: red;
+  text-decoration: none;
+  font-weight: 900;
+  margin: 10px;
+  text-align: left;
+  width: 100%;
+  font-size: small;
+}
+.mainContainer a:hover {
+  color: #1f1c18;
+  text-decoration: none;
+  font-weight: bold;
+}
+#confirm {
+  margin-bottom: 20px;
+}

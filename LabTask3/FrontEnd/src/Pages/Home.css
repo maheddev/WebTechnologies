@@ -1,0 +1,19 @@
+.Home-Page {
+  width: 100%;
+  min-height: 95.1vh;
+  max-height: auto;
+}
+.ViewMore {
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color: transparent;
+  color: #fff;
+  font-weight: bold;
+  border: 2px solid #fff;
+  font-size: 15px;
+}
+.ViewMore:hover{
+    background-color: #fff;
+    border: 2px solid transparent;
+    color: #000;
+}
